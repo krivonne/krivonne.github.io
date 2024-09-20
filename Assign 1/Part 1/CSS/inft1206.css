@@ -1,1 +1,30 @@
-{\rtf1}
+/*
+Name: Krivonne Evans
+File: inft1206.css
+Date: 10 September 2024
+Mark up of a letter
+*/
+body {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .sender-column {
+    text-align: right;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.3em;
+  }
+  
+  p,ul,ol,dl,address {
+    font-size: 1.1em;
+  }
+  
+  p, li, dd, dt, address {
+    line-height: 1.5;
+  }
