@@ -125,18 +125,37 @@ Making a Mozilla splash page
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
+        <!-- insert images with srcsets and sizes --> 
+         <!-- Adding srcset and size will change the image's resolution based on screen size. ~k.e.-->>
         <a href="https://www.mozilla.org/en-US/firefox/new/">
-          <img src="firefox_logo_400.png" alt="Firefox logo">
+          <img 
+            srcset="firefox_logo_120.png 120w, 
+            firefox_logo_400.png"
+            sizes="(max-width 500px) 120px, 400px" 
+            src="firefox_logo_400.png" 
+            alt="Firefox logo">
         </a>
         <a href="https://www.mozilla.org/">
-          <img src="mozilla-dinosaur-head-400.png" alt="Dinosaur head">
+          <img
+            srcset="mozilla-dinosaur-head-120.png 120w,
+            mozilla-dinosaur-head-400.png 400w"
+            sizes="(max-width 500px) 120px, 400px" 
+            src="mozilla-dinosaur-head-400.png" 
+            alt="Dinosaur head">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img src="firefox-addons-400.jpg" alt="Firefox addons">
+          <img 
+            srcset="firefox-addons-120.jpg 120w,
+            firefox-addons-400.jpg 400w"
+            sizes="(max-width 500px) 120px, 400px" 
+            src="firefox-addons-400.jpg" 
+            alt="Firefox addons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg" alt="mdn">
+          <!--mdn will not need srcset or size due to it automatically adjusting resolution-->
+          <img 
+            src="mdn.svg" 
+            alt="mdn">
         </a>
         <div class="clearfix"></div>
       </div>
