@@ -126,7 +126,7 @@ Making a Mozilla splash page
 
       <div class="further-info">
         <!-- insert images with srcsets and sizes --> 
-         <!-- Adding srcset and size will change the image's resolution based on screen size. ~k.e.-->>
+         <!-- Adding srcset and size will change the image's resolution based on screen size. ~k.e.-->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img 
             srcset="firefox_logo_120.png 120w, 
@@ -152,7 +152,7 @@ Making a Mozilla splash page
             alt="Firefox addons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <!--mdn will not need srcset or size due to it automatically adjusting resolution-->
+          <!--mdn will not need srcset or size due to it automatically adjusting resolution ~k.e.-->
           <img 
             src="mdn.svg" 
             alt="mdn">
@@ -162,6 +162,11 @@ Making a Mozilla splash page
 
       <div class="red-panda">
         <!-- insert picture element -->
+         <picture>
+            <source media="(max-width: 600px)"
+            srcset="red-panda-600.jpg">
+            <img src="red-panda-1200.jpg" alt="Red panda">
+         </picture>
       </div>
 
     </main>
